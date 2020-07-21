@@ -1,0 +1,35 @@
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+
+block style
+    style
+      include ../static/style.css
+      include ../static/styleService.css
+block content
+    div.container
+        div.text
+            h1 SERVICES WE PROVIDES
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum ratione quam officia maiores aliquam amet inventore architecto laboriosam? Perferendis id nulla corrupti earum quos iure possimus deleniti quis animi, eligendi nemo rerum facere.
+        div.boxes
+            div.box
+                div.inner_box
+                    span
+                        img(src="/static/picture/tongo2.png")
+                    h3 Dance Studio
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aut iusto itaque vero, ipsum architecto quam dolores provident iste nihil.
+            div.box
+                div.inner_box
+                    span
+                        img(src="/static/picture/tongo1.png")
+                    h3 Online Dance Classes
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aut iusto itaque vero, ipsum architecto quam dolores provident iste nihil.
+            div.box
+                div.inner_box
+                    span
+                        img(src="/static/picture/tongo3.png")
+                    h3 One Week Free
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aut iusto itaque vero, ipsum architecto quam dolores provident iste nihil.
+
+

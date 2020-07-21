@@ -1,0 +1,59 @@
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+
+block style
+    style
+      include ../static/style.css
+      include ../static/styleClass.css
+
+block content
+    div.container
+        h1 Class Information
+        video(class = "infro" controls)
+            source(src = "Dance.mp4" type = "video/mp4")
+        table
+            caption Popular Coffee Drinks
+            tr
+                th Drink
+                th Preparatio
+                th Tempretur
+                th ingradiant
+                th Detail
+            <tr>
+                td Cappuccino
+                td Esprosso
+                td Hot
+                td Equal amount of espresso and stremilk
+                td Pour the espressothrough the milkserve
+            <tr>
+                td Latte
+                td Esprosso
+                td Hot
+                td 2/3 or more streamed milk and espresso
+                td Pour the espresso through the milk serve.
+            <tr>
+                td Macchiato
+                td Esprosso
+                td Hot
+                td Esprosso with just a "mark" of streamed milk
+                td Add milk to the expressoafter pressing.
+            <tr>
+                td Iced Coffee
+                td Drip or french press
+                td Cold
+                td Coffee poured over ice
+                td Can be sweetened with sugar or creme.
+            <tr>
+                td Frappe
+                td Strong instant Coffee
+                td Cold
+                td instant coffee, water and milk
+                td Shake to create a form, then pour over ice and serve. A speciality in Greece
+            <tr>
+                td Flat white
+                td Esprosso
+                td Hot
+                td /3 espresso and 2/3 streamed milk
+                td A speciality in Australia and New Zealand.the foam is often decorated with a motif.

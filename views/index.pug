@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/picture/logo.png")
+                | MDC
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    section#intro
+        div welcome to dance club
+        div.small Dance to Express
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfaction
+            div.card-box
+                div.card-img
+                    img(src="/static/picture/dance2.png")
+                div.card-content
+                    p This is best dance club for enjoyment
+        div.card
+            h3 Dance the way you ike
+            div.card-box
+                div.card-img
+                    img(src="/static/picture/dacne4.png")
+                div.card-content
+                    p This is best dance club for enjoyment
+        div.card
+            h3 Relif from the stress life
+            div.card-box
+                div.card-img
+                    img(src="/static/picture/dance1.jpg")
+                div.card-content
+                    p This is best dance club for enjoyment
+    section#sponsorsSection
+        h2 Our sponsors
+        div#sponser
+            img(src="/static/picture/logo_da1.png", alt="Sponser Image",class="npImage")
+            img(src="/static/picture/logo_da2.png", alt="Sponser Image",class="npImage")
+            img(src="/static/picture/logo_da3.png", alt="Sponser Image",class="npImage")
+            img(src="/static/picture/logo_da4.jpg", alt="Sponser Image",class="npImage")
+    footer#footer 
+        | Copyright © 2019 MotoDanceClub.com | All right reserved
+    script
+      include ../static/index.js
+
