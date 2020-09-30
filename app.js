@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
-
+//use cors module for MAking http request more easily while working on project
 mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true});
 const app = express();
 const port = 8000;
