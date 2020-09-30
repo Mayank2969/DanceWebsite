@@ -6,7 +6,6 @@ const bodyparser = require('body-parser');
 //use cors module for MAking http request more easily while working on project
 mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true});
 const app = express();
-const port = 8000;
 
 // app.use(express.status('static',option));
 
@@ -56,7 +55,7 @@ app.get('/ClassInfo', (req, res)=>{
 app.post('/contact', (req, res)=>{   
     var myData = new Contact(req.body);
     myData.save().then(() =>{
-        res.send("This item has been saved in database");
+        res.status(200).send("This item has been saved in database");
     }).catch(()=>{
         res.status(400).send("Item was not saved to the database");
     })
@@ -64,6 +63,6 @@ app.post('/contact', (req, res)=>{
 })
 
 // START THE SERVER
-app.listen(port, ()=>{
-    console.log(`The application started successfully on port ${port}`);
+app.listen(8000, ()=>{
+    console.log(`The application started successfully on port 8000`);
 });
